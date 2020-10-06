@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{form_start(form, {'action': path('add_image'), 'method': 'POST'}) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
